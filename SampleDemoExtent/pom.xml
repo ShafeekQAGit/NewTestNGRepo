@@ -62,7 +62,7 @@
 
 
     </dependencies>
-         <Plugins>
+         <plugins>
     <plugin>
      <groupId>org.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
