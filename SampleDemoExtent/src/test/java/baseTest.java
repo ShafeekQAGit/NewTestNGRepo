@@ -38,11 +38,10 @@ public class baseTest {
     }
 
     @BeforeMethod
-    @Parameters(value = {"browserName"})
-    public void beforeMethodMethod(String browserName, Method testMethod)
+    public void beforeMethodMethod( Method testMethod)
     {
         logger= extent.createTest(testMethod.getName());
-        setUpDriver(browserName);
+        setUpDriver("chrome");
         driver.manage().window().maximize();
         driver.get(Constants.url);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

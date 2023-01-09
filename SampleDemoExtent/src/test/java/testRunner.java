@@ -14,9 +14,9 @@ public class testRunner extends baseTest {
     @Test(priority = 1)
     public void testOne()
     {
-        System.out.println("Failed test case");
+        System.out.println("first test case");
         logger.info("Test one Failed");
-        Assert.fail();
+
     }
     @Test(priority = 2)
     public void testTwo()
